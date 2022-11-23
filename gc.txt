@@ -39,3 +39,9 @@ Simple, fast, no mark and delete, no fragment
 Memory doubled, good if # live object is small
 
 (3) Mark -> Compact
+Steps:
+1. Scan from root and Mark all referred objects in their headers
+2. Compact live objects to one side sequentially
+3. Clean other
+
+No fragment, STW
