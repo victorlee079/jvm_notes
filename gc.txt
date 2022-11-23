@@ -45,3 +45,7 @@ Steps:
 3. Clean other
 
 No fragment, STW
+
+Speed: Copy > Mark-Sweep > Mark-Compact
+Space: Mark-Sweep = Mark-Compact < Copy
+Movement: Copy, Mark-Compact
