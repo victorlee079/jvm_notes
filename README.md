@@ -1,6 +1,6 @@
 # My Learning Notes on JVM
 
-<b><u>GC Mechanism</u></b>
+**GC Mechanism**
 
 (1) The first step is to mark the objects to be removed
 
