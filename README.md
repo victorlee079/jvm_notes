@@ -1,8 +1,8 @@
 # My Learning Notes on JVM
 
-**GC Mechanism**
+***GC Mechanism***
 
-(1) The first step is to mark the objects to be removed
+**Marking Objects**
 
 Tracing Garbage Collection was adopted in Java.
 (Another way is to do reference counting which is memory consuming and requires additional handling to deal with circular reference)
@@ -22,7 +22,7 @@ How to dump
 1. jps/jmap
 2. JVisualVM
 
-(2) Recycle
+**Recycle**
 
 a. Mark -> Sweep
 Steps:
