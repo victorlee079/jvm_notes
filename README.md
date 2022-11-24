@@ -1,5 +1,7 @@
 # My Learning Notes on JVM
 
+<b>GC Mechanism</b>
+
 (1) The first step is to mark the objects to be removed
 
 Tracing Garbage Collection was adopted in Java.
