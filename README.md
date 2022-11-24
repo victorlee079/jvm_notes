@@ -4,6 +4,7 @@
 ==================
 
 **Marking Objects**
+-------------------
 
 Tracing Garbage Collection was adopted in Java.
 (Another way is to do reference counting which is memory consuming and requires additional handling to deal with circular reference)
@@ -24,6 +25,7 @@ How to dump
 2. JVisualVM
 
 **Recycle**
+-----------
 
 a. Mark -> Sweep
 Steps:
