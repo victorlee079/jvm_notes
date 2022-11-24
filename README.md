@@ -1,6 +1,7 @@
 # My Learning Notes on JVM
 
 ***GC Mechanism***
+==================
 
 **Marking Objects**
 
