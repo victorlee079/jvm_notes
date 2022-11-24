@@ -27,7 +27,7 @@ How to dump
 **Recycle**
 -----------
 
-a. Mark -> Sweep
+a. Mark-Sweep
 Steps:
 - Stop the world
 - Scan from root and Mark all referred objects in their headers
@@ -45,7 +45,7 @@ Steps:
 Simple, fast, no mark and delete, no fragment
 Memory doubled, good if # live object is small
 
-(3) Mark -> Compact
+c. Mark-Compact
 Steps:
 1. Scan from root and Mark all referred objects in their headers
 2. Compact live objects to one side sequentially
@@ -56,3 +56,15 @@ No fragment, STW
 Speed: Copy > Mark-Sweep > Mark-Compact
 Space: Mark-Sweep = Mark-Compact < Copy
 Movement: Copy, Mark-Compact
+
+**Generational Collecting**
+
+Young Gen
+- Short life cycle, Frequent Recycle, Smaller region
+- (b) Copy
+
+Tenured Gen
+- Larger region, Longer Life Cycle
+- (c) Mark-Compact
+
+Example: CMS
